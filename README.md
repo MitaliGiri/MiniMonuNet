@@ -15,12 +15,13 @@ This project was designed to be lightweight and easy to run on limited hardware 
 ## 🗂️ Dataset
 
 The dataset contains images of 24 Indian landmarks sourced from a Kaggle dataset.  
-*Note: The dataset is not included in the repository. Please download from [Kaggle Link](#) https://www.kaggle.com/datasets/danushkumarv/indian-monuments-image-dataset
+*Note: The dataset is not included in the repository. Please download from 
+[Kaggle Link] https://www.kaggle.com/datasets/danushkumarv/indian-monuments-image-dataset
 
 ---
 
 ## ⚙️ Project Structure
-
+<pre>
 MiniMonuNet/
 ├── app/
 │ └── streamlit_app.py # Streamlit frontend app
@@ -34,18 +35,20 @@ MiniMonuNet/
 │ └── MiniMonuNet.ipynb # Colab notebook (training + analysis)
 ├── requirements.txt # All required dependencies
 └── README.md # Project documentation
+</pre>
+---
 
+## 🧠 Model Details
 
-🧠 Model Details
 Base Model: ResNet18 (transfer learning via torchvision.models)
 
 Accuracy: ~85% test accuracy after 5 epochs
 
 Explainability: Grad-CAM used to highlight class-relevant image regions
 
-Optimized for simplicity and clarity — ideal for learning and quick demos.
+Optimized for simplicity and clarity — ideal for learning and quick demos
 
-
+---
 
 ## 🚀 How to Run
 
@@ -53,42 +56,53 @@ Optimized for simplicity and clarity — ideal for learning and quick demos.
 
 Open the Jupyter/Colab notebook:
 
-```bash
 notebook/MiniMonuNet.ipynb
 
-🌐 Run Streamlit App
+
+### 🌐 Run Streamlit App
+
 Install dependencies:
+
+```bash
 pip install -r requirements.txt
+```
 
 Then launch the Streamlit app:
+
+```bash
 cd app
 streamlit run streamlit_app.py
+```
 
+---
 
-
-
-🎯 Possible Use Cases
+## 🎯 Possible Use Cases
 Educational tools on Indian heritage
 
 Mobile apps for monument recognition
 
 Lightweight CV pipeline for tourism or AR applications
 
+---
 
-📸 Grad-CAM Example
-<div align="center"> <img src="gradcam_outputs/gradcam_1.png" width="400px" /> </div>
-<div align="center"> <img src="gradcam_outputs/gradcam_1.png" width="400px" /> </div>
+## 📸 Grad-CAM Example
+<div align="center"> <img src="gradcam_outputs/gradcam_3.png" width="400px" /> </div>
+<div align="center"> <img src="gradcam_outputs/gradcam_2.png" width="400px" /> </div>
 
+---
 
-🛠️ Future Improvements
+## 🛠️ Future Improvements
+
 Expand dataset to include global landmarks
 
 Integrate model into mobile apps
 
 Enhance frontend UI and add search/filter options
 
+---
 
+## 📬 Contact
 
-📬 Contact
-Made by Mitali Giri [https://github.com/MitaliGiri]
+Made by Mitali Giri https://github.com/MitaliGiri
+
 For suggestions, collaborations, or feedback — feel free to reach out!
